@@ -10,6 +10,7 @@ item.forEach((e)=>{
 });
 
 let tr = document.createElement("tr");
+tr.setAttribute("id","ans");
 const getSum = () => {
 	let sum = 0;
 
