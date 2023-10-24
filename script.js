@@ -5,7 +5,7 @@ document.body.appendChild(getSumBtn);
 const  item = document.querySelectorAll(".price");
 var arr = [];
 item.forEach((e)=>{
-	let value = e.innerText;
+	let value = e.innerText; 
 	arr.push(parseInt(value));
 });
 
@@ -16,7 +16,7 @@ const getSum = () => {
 
 	for (let i = 0; i < arr.length; i++) {
 		sum = sum + arr[i];
-		tr.innerText = sum;
+		tr.innerText = String(sum);
 	}	
 };
 table.appendChild(tr);
