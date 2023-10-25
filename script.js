@@ -18,9 +18,9 @@ const getSum = () => {
 
 	for (let i = 0; i < arr.length; i++) {
 		sum = sum + arr[i];
-		tr.innerText = sum+10;
-		tr1.innerText = sum - 67;
-	}	
+		// tr.innerText = sum + 10;
+		tr.innerText = sum + 10 + " " + 333;
+	}	 
 };
 table.appendChild(tr);
 table.appendChild(tr1);
