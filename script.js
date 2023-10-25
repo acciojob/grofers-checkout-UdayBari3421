@@ -10,19 +10,15 @@ item.forEach((e)=>{
 });
 
 let tr = document.createElement("tr");
-let tr1 = document.createElement("tr");
 tr.setAttribute("id","ans");
-tr1.setAttribute("id","ans");
 const getSum = () => {
 	let sum = 0;
 
 	for (let i = 0; i < arr.length; i++) {
 		sum = sum + arr[i];
-		// tr.innerText = sum + 10;
 		tr.innerText = sum + 10 + " " + 333;
 	}	 
 };
 table.appendChild(tr);
-table.appendChild(tr1);
 getSumBtn.addEventListener("click", getSum);
 
